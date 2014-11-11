@@ -1,15 +1,27 @@
-var description = document.querySelector('#descrip');
-console.log (description.tagName);
-console.log (description.parentNode.tagName);
+var player = 
 
-var outputChildren = document.querySelectorAll ('output > *');
 
-for (i = 0; i < outputChildren.length; i++ ) {
-  console.log (outputChildren[i].tagName);
+var interpret = function (str) {
+  var trimmedStr = str.trim ();
+  var splitStr = trimmedStr.split(" ");
+  var action = splitStr.shift();
+    
+  return [action, parts.join(' ')]; 
+}
+
+var execute = function () {
+
+
 };
 
-var p = document.querySelector ('output > p');
-console.log (p.parentNode.tagName);
+var report = function () {
 
-var inventory = document.getElementById('inventory');
-console.log (inventory.parentNode.tagName); 
+
+};
+
+
+var gameStep = function () {
+
+
+
+};
